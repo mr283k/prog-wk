@@ -1,0 +1,60 @@
+{
+  "__Comment ddlEnv__": "ddlEnv value should be 'dev' or 'test' or 'prod'",
+  "ddlEnv": "dev",
+  "__Comment ddlFor 1__": "ddlFor value should be 'current' or 'previous' or 'delta' or 'eod'",
+  "__Comment ddlFor 2__": "Pls check 'tblPrefixDict' keys for possible values",
+  "ddlFor": "current",
+  "parquetDDLs": ["eod"],
+  "__Comment dataBucket__": "Data Bucket details for dev, test and prod'",
+  "dataBucket": {
+    "dev": "tmk-cdm-data",
+    "test": "tmk-cdm-test-data",
+    "prod": "tmk-cdm-prd-data"
+  },
+  "tblPrefixDict": {
+    "current": "curr",
+    "previous": "prev",
+    "delta": "delta",
+    "eod": "eod",
+    "history/eod": "eod",
+    "history/eod-parquet": "peod",
+    "history/eom": "eom",
+    "history/eom-parquet": "peom"
+  },
+  "maskedFiles" : {
+    "NoNeed_processing_params_ALISHISTFILE.json": ["/alis-histfile/", "/alis-histfile-masked/"],
+    "NoNeed_processing_params_ALISMASTER.json": ["/alis-master/", "/alis-master-masked/"]
+  },
+  "splDBs" : {
+    "lnl-mainframe/alis-master": "dl_lnl_mainframe_alismaster",
+    "lnl-mainframe/bi-issuepnd": "dl_lnl_mainframe_biissuepnd",
+    "lnl-mainframe/bi-support": "dl_lnl_mainframe_bisupport",
+    "lnl-mainframe/bnk-master": "dl_lnl_mainframe_bnkmaster",
+    "lnl-mainframe/fo-record": "dl_lnl_mainframe_forecord",
+    "lnl-mainframe/issue-pending": "dl_lnl_mainframe_issuepending",
+    "lnl-mainframe/ois-app": "dl_lnl_mainframe_oisapp",
+    "lnl-mainframe/oi-support": "dl_lnl_mainframe_oisupport",
+    "lnl-mainframe/oi-supportpending": "dl_lnl_mainframe_oisupportpending",
+    "lnl-mainframe/plrd-mast": "dl_lnl_mainframe_plrdmast",
+    "ail-mainframe/nil-pmfmast": "dl_ail_mainframe_nilpmfmast",
+    "gl-mainframe/pgecs00": "dl_gl_mainframe_ecscommstmt_pgecs00",
+    "gl-mainframe/pgacu00": "dl_gl_mainframe_acucommstmt_pgacu00",
+    "gl-mainframe/pgacu10": "dl_gl_mainframe_moncancerstmt_pgacu10",
+    "gl-mainframe/pgecs10": "dl_gl_mainframe_monesdecsstmt_pgecs10",
+    "gl-mainframe/ua-sag16mp1": "dl_gl_mainframe_nymoncommstmt_sag16mp1"
+  },
+  "splTrlrs" : {
+    "ail-mainframe/pmfmast": {"@": "at", "$": "ds"},
+    "ail-mainframe/nil-pmfmast": {"@": "at", "$": "ds"},
+    "default": {"@": "atr", "$": "dlr"}
+  },
+  "splFields" : {
+    "lnl-mainframe/fo-record": {"DESC": 255},
+    "ail-mainframe/pmfmast": {"MTNLDTA_COD": 255},
+    "ail-mainframe/nil-pmfmast": {"MTNLDTA_COD": 255},
+    "ail-mainframe/lapsemnt": {"MTNLDTA_COD": 255},
+    "ail-mainframe/nil-lapsemnt": {"MTNLDTA_COD": 255},
+    "ail-mainframe/uwimast": {"UWI_U05NAME": 1000, "UWI_U05DOB": 255, "UWI_U05PLB": 255},
+    "ail-mainframe/nil-uwimast": {"UWI_U05NAME": 1000, "UWI_U05DOB": 255, "UWI_U05PLB": 255}
+  }
+}

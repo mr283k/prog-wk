@@ -1,0 +1,12 @@
+{
+  "SourceProgramDirectory": "H:/EBCIDIC2ASCII/Mainframe Parsing/MainDetails/EztPgms/Src",
+  "Dummy":
+  [
+    {"SourceProgram": "CL908PR4.txt", "OutputFiles": ["REPORT1", "REPORT2"]},
+    {"SourceProgram": "AL464NDC.txt", "OutputFiles": ["OUTFILE"]}
+  ],
+  "LogicExtractDetails":
+  [
+    {"SourceProgram": "BI477PRO.txt", "OutputFiles": ["PEND29", "PEND29B", "TOTALRPT"]}
+  ]
+}

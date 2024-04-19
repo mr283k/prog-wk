@@ -1,0 +1,54 @@
+{
+  "__Comment for Environment__": "Possible values are dev, test, prod",
+  "Environment": "prod",
+
+  "__Comment for ManifestFor__": "Possible values are current, previous, delta",
+  "ManifestFor": "current",
+
+  "processing_params_AMF.json": {
+    "OriginalS3Folder": "/amf/",
+    "MaskedS3Folder": "/amf-masked/",
+    "BoolToRemove_": false,
+    "MaskedTrailers": [
+      "AL", "01", "01-1", "02", "27", "27-1", "29", "29-1", "30", "31", "32", "33",
+      "34", "34-1", "35", "37", "39", "41", "41-1", "41-2", "43", "45", "47", "51",
+      "51-1", "53", "55", "55-1", "60", "62", "64", "64-1", "70", "76"],
+    "UnmaskedTargetFolder": "amf-unmasked",
+    "MaskedTargetFolder": "amf"},
+  "processing_params_ALISMASTER.json": {
+    "OriginalS3Folder": "/alis-master/",
+    "MaskedS3Folder": "/alis-master-masked/",
+    "BoolToRemove_": false,
+    "UnmaskedTargetFolder": "alis-master-unmasked",
+    "MaskedTargetFolder": "alis-master"},
+  "processing_params_ALISHISTFILE.json": {
+    "OriginalS3Folder": "/alis-histfile/",
+    "MaskedS3Folder": "/alis-histfile-masked/",
+    "BoolToRemove_": false,
+    "UnmaskedTargetFolder": "alis-histfile-unmasked",
+    "MaskedTargetFolder": "alis-histfile"},
+  "processing_params_ADMFN00.json": {
+    "OriginalS3Folder": "/admfn00/",
+    "MaskedS3Folder": "/admfn00-masked/",
+    "BoolToRemove_": false,
+    "UnmaskedTargetFolder": "admfn00-unmasked",
+    "MaskedTargetFolder": "admfn00"},
+  "processing_params_ADMFX00.json": {
+    "OriginalS3Folder": "/admfx00/",
+    "MaskedS3Folder": "/admfx00-masked/",
+    "BoolToRemove_": false,
+    "UnmaskedTargetFolder": "admfx00-unmasked",
+    "MaskedTargetFolder": "admfx00"},
+  "processing_params_ADMTR00.json": {
+    "OriginalS3Folder": "/admtr00/",
+    "MaskedS3Folder": "/admtr00-masked/",
+    "BoolToRemove_": false,
+    "UnmaskedTargetFolder": "admtr00-unmasked",
+    "MaskedTargetFolder": "admtr00"},
+  "processing_params_STATFILE.json": {
+    "OriginalS3Folder": "/statfile/",
+    "MaskedS3Folder": "/statfile-masked/",
+    "BoolToRemove_": false,
+    "UnmaskedTargetFolder": "statfile-unmasked",
+    "MaskedTargetFolder": "statfile"}
+}
